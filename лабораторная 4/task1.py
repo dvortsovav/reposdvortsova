@@ -1,8 +1,7 @@
-# TODO решите задачу
 import json
 
-def task() -> float:
 
+def task() -> float:
     # открываем файл
     with open('input.json', 'r') as f:
         data = json.load(f)
@@ -13,5 +12,6 @@ def task() -> float:
         sum_of_products += item['score'] * item['weight']
 
     return round(sum_of_products, 3)
+
 
 print(task())
